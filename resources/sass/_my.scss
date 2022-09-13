@@ -1,0 +1,57 @@
+
+// navbar を上部固定にするため
+body{
+  padding-top: 70px;
+}
+
+nav {
+  opacity: 0.85;
+}
+
+.btn-feed {
+  color: #fff;
+  background-color: orange;
+  border-color: orange;
+}
+
+
+.btn-feed:hover {
+  color: #fff;
+  background-color: rgb(255, 166, 0);
+  border-color: rgb(255, 166, 0);
+}
+
+.btn-feed:focus,
+.btn-feed.focus {
+  color: #fff;
+  background-color: orange;
+  border-color: orange;
+  box-shadow: 0 0 0 0.2rem rgba(82, 161, 225, 0.5);
+}
+
+.btn-feed.disabled,
+.btn-feed:disabled {
+  color: #fff;
+  background-color: orange;
+  border-color: orange;
+}
+
+.btn-feed:not(:disabled):not(.disabled):active,
+.btn-feed:not(:disabled):not(.disabled).active,
+.show > .btn-feed.dropdown-toggle {
+  color: #fff;
+  background-color: orange;
+  border-color: orange;
+}
+
+.btn-feed:not(:disabled):not(.disabled):active:focus,
+.btn-feed:not(:disabled):not(.disabled).active:focus,
+.show > .btn-feed.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(238, 117, 18, 0.616);
+}
+
+.sidebar {
+  top:60px;
+  position: -webkit-sticky;
+  position: sticky;
+}
